@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark-blue:rgb(3, 125, 240);
+  --golden: rgb(245, 197, 107);
+  --dark-golden: rgb(233, 161, 27);
+  --blue: rgb(107, 180, 245);
+  --white: #f0eaea;
+  --dark: #1a1a1a;
+  --red: #f32020;
+}
+body {
+  background-color: var(--dark);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.header-logo{
+  font-size:100px !important ;
+  color:var(--blue);
+  margin-left: 3rem;
+}
+.header-logo:hover{
+  color: var(--dark-blue)
+}
+
+.heading > h1 {
+  color: var(--blue);
+  font-size: 6rem;
+  margin-left: 0.35em ;
+  justify-content: center;
+}
+
+p , label, tr,td, th{
+  color: aliceblue;
+}
+#project-form{
+  display:block;
+  text-align: left;
+  margin: 30px auto;
+}
+.form-group{
+  margin: 20px 15px;
+  border-radius: 7px;
+}
+.form-group> label{
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+.form-group> input{
+  height:30px;
+  float: right;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 11px;
+  border: none;
+  outline: none;
+}
+.submit-button{
+  display:block;
+  width: 60%;
+  font-weight: 700;
+  color: aliceblue;
+  border: 2px solid wheat;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin: 20px auto;
+  padding:7.5px  2.5px;
+  border-radius: 5px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+  background-color: var(--dark-golden);
+  font-size: 120%;
+}
+.project-table{
+  border: 2px dotted var(--golden);
+  margin: -20px auto;
+  padding: 10px;
+  width: 90%;
+}
+
+th{
+  color: var(--golden);
+}
+
+td{
+  padding-left: 15px;
+  text-align: left;
+}
+button{
+  border: none;
+  /* outline:none; */
+  border-radius: 4.7px;
+  padding: 2.5px 7px;
+  font-size: 20px;
+  background-color: var(--red);
+}
+
+.content {
+    padding:0;
+    margin:10% 15%;   
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+}
+
+.close:hover,.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .5;
+}
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.alert {
+  width: 90%;
+    padding: 5px;
+    margin: auto;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.alert-success hr {
+    border-top-color: #c9e2b3;
+}
+
+.alert-success .alert-link {
+    color: #2b542c;
+}
+
+.alert-info {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+
+.alert-info hr {
+    border-top-color: #a6e1ec;
+}
+
+.alert-info .alert-link {
+    color: #245269;
+}
+
+.alert-warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+}
+
+.alert-warning hr {
+    border-top-color: #f7e1b5;
+}
+
+.alert-warning .alert-link {
+    color: #66512c;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+.alert-danger hr {
+    border-top-color: #f02648;
+}
+
+.alert-danger .alert-link {
+    color: #843534;
+}
+
+.alert {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.11);
+}
+
+.alert .sign {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+    text-align: center;
+    width: 25px;
+    display: inline-block;
+}
+
+.alert-success {
+    background-color: #dbf6d3;
+    border-color: #aed4a5;
+    color: #569745;
+}
+
+.alert-info {
+    background-color: #d9edf7;
+    border-color: #98cce6;
+    color: #3a87ad;
+}
+
+.alert-warning {
+    background-color: #fcf8e3;
+    border-color: #f1daab;
+    color: #c09853;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #e0b1b8;
+    color: #b94a48;
+}
+
+.alert-white {
+  text-align: center;  
+  margin: 10px auto;
+    position: relative;
+    transition-timing-function: ease-in;
+    transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+  
+}
+
+/* If you want alert without icon then juast make it comment */
+/* starting */
+/* .alert-white {
+    background-image: linear-gradient(to bottom,#FFFFFF,#F9F9F9);
+    border-top-color: #d8d8d8;
+    border-bottom-color: #bdbdbd;
+    border-left-color: #cacaca;
+    border-right-color: #cacaca;
+    color: #404040;
+    padding-left: 61px;
+    position: relative;
+}
+
+.alert-white .icon {
+    text-align: center;
+    width: 45px;
+    height: 100%;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    border: 1px solid #bdbdbd;
+} */
+/* ending */
+
+.alert-white .icon:after {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 1px solid #bdbdbd;
+    position: absolute;
+    border-left: 0;
+    border-bottom: 0;
+    top: 50%;
+    right: -6px;
+    margin-top: -5px;
+    background: #fff;
+}
+
+.alert-white.rounded {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.alert-white.rounded .icon {
+    border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+}
+
+.alert-white .icon i {
+    font-size: 20px;
+    color: #FFF;
+    left: 12px;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+}
+
+.alert-white.alert-danger .icon,.alert-white.alert-danger .icon:after {
+    border-color: #ca452e;
+    background: #da4932;
+}
+
+.alert-white.alert-info .icon,.alert-white.alert-info .icon:after {
+    border-color: #3a8ace;
+    background: #4d90fd;
+}
+
+.alert-white.alert-warning .icon,.alert-white.alert-warning .icon:after {
+    border-color: #d68000;
+    background: #fc9700;
+}
+
+.alert-white.alert-success .icon,.alert-white.alert-success .icon:after {
+    border-color: #54a754;
+    background: #60c060;
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        .heading > h1 {
+          color: var(--golden);
+          font-size: 2.5rem;
+          margin:0 auto;
+        }
+        .header-logo{
+          font-size:50px !important;
+          color:var(--golden);
+          margin-left:25px;
+        }
+        .header-logo:hover{
+          color: var(--white)
+        }
+        p{
+          margin-left:15px ;
+        }
+      }
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px) {
+        ...;
+      }
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+        ...;
+      }
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {
+        ...;
+      }
+
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1200px) {
+        ...;
+    }  
+/*
